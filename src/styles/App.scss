@@ -1,0 +1,57 @@
+$border-color: black;
+$background-color: #8fe3cf;
+$font-color: #002b5b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 365px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.App {
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  background-color: $background-color;
+}
+
+.table {
+  padding: 10px;
+  color: $font-color;
+  &__header {
+    padding: 20px 0px;
+  }
+  &-filter-list {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-form {
+    padding: 20px 0px;
+    &__input {
+      height: 25px;
+      width: 60%;
+      border: 1px solid $border-color;
+      border-radius: 10px 0px 0px 10px;
+      padding: 10px;
+    }
+    &__select {
+      height: 25px;
+      width: 40%;
+      border: 1px solid $border-color;
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+}
+
+.trade-table {
+  margin-top: 100px;
+}
